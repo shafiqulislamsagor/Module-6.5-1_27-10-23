@@ -17,6 +17,24 @@
         a:visited{
             color: red;
         }
+        li:first-child{
+            color: green;
+        }
+        li:last-child{
+            color: blue;
+        }
+        li:nth-child(2n){
+            background-color: goldenrod;
+        }
+        li:nth-child(2n+1){
+            background-color: blueviolet;
+        }
+        h3::after{
+            content: ' (after avabhe bose)';
+        }
+        .before::before{
+            content: '(eta sob somoi age bose) ';
+        }
     </style>
 </head>
 <body>
@@ -25,5 +43,20 @@
     <a href="https://www.google.com/">Google</a>
     <a href="https://www.merriam-webster.com/dictionary/habit">ojana</a>
     <a href="https://github.com/">Github</a>
+    <ol>
+        <li>this is my pseudo 1</li>
+        <li>this is my pseudo 2</li>
+        <li>this is my pseudo 3</li>
+        <li>this is my pseudo 4</li>
+        <li>this is my pseudo 5</li>
+        <li>this is my pseudo 6</li>
+        <li>this is my pseudo 7</li>
+    </ol>
+    <h3 class="before">this is after and before</h3>
+    <h3>this is after and before</h3>
+    <h3 class="before">this is after and before</h3>
+    <h3>this is after and before</h3>
+    <h3 class="before">this is after and before</h3>
+    <h3>this is after and before</h3>
 </body>
 </html>
