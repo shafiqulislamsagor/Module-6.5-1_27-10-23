@@ -35,6 +35,53 @@
         .before::before{
             content: '(eta sob somoi age bose) ';
         }
+        /* Position */
+        div{
+            height: 200px;
+            width: 200px;
+        }
+        .a{
+            background-color: pink;
+            position: absolute;
+            left: 100px;
+        }
+        .b{
+            background-color: aqua;
+            position: absolute;
+            left: 200px;
+        }
+        .c{
+            background-color: blueviolet;
+        }
+        .d{
+            background-color: aquamarine;
+        }
+        .e{
+            background-color: burlywood;
+            position: relative;
+            left: 40px;
+            top: -160px;
+        }
+        .f{
+            background-color: yellow;
+            position: relative;
+            left: 90px;
+            top: -313px;
+        }
+        .dum{
+            background-color: yellowgreen;
+        }
+        .special{
+            background-color: tomato;
+            position: sticky;
+            top: 200px;
+        }
+        .fixed{
+            background-color: violet;
+            position: fixed;
+            left: 900px;
+            top: 130px;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +90,7 @@
     <a href="https://www.google.com/">Google</a>
     <a href="https://www.merriam-webster.com/dictionary/habit">ojana</a>
     <a href="https://github.com/">Github</a>
-    <ol>
+    <ol style="list-style: none;">
         <li>this is my pseudo 1</li>
         <li>this is my pseudo 2</li>
         <li>this is my pseudo 3</li>
@@ -58,5 +105,42 @@
     <h3>this is after and before</h3>
     <h3 class="before">this is after and before</h3>
     <h3>this is after and before</h3>
+    <section>
+        <!-- absolute -->
+        <nav class="absolute">
+            <h2>Absolute basman obostai thake</h2>
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+        </nav>
+        <!-- Relative -->
+        <nav>
+            <h2>Relative sob somoi sorbe kintu nijer jaiga kaw k dive na</h2>
+            <div class="d"></div>
+            <div class="e"></div>
+            <div class="f"></div>
+        </nav>
+        <!-- sticky -->
+        <nav>
+            <h2>sticky holo tar position joto bola hobe tar div ar modde theke sqrol jabe</h2>
+            <div class="special"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="dum"></div>
+        </nav>
+        <nav>
+            <h2>Fixed holo take jekhane rakha hobe sekhanei thakbe</h2>
+            <div class="dum"></div>
+            <div class="dum"></div>
+            <div class="fixed"></div>
+        </nav>
+    </section>
 </body>
 </html>
